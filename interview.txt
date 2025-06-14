@@ -1,0 +1,897 @@
+#######################################################
+Interview questions asked:
+1) Tell me about your self
+2) What are the debugging tools you have worked on
+3) How much you can rate your self in python and C
+4) What is static variable and global variable
+5) Can you debug at register level
+6) What do you know about ARM
+7) How an interrupt Is handled.
+7) What do you know about linux
+
+#######################################################
+Interview questions asked:
+1) Connection establishment process of wlan 
+2) Process of power save and how devices will come out form power save , both the way AP to STA , STA to AP.
+3) Who will send Beacons 
+4) Time complexity of array for:
+	Insertion();
+	Updations();
+	Inseration();
+	deletation();
+which Data type can be better to use and give the time complexity of each.
+	
+5)Given an m x n binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
+Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
+Output: 4
+6)define pointer and how it works and is size of all differ type pointer is same ? 
+
+
+#######################################################
+Interview questions asked:
+1)What is segmentation fault
+2)what are mutex and spinlock
+3)explain arm internals
+4)explain riscv privileged and unprivileged mode
+5)can we use mutex in interrupt service routine 
+6)Have you used J-Tags in your project what is the purpose. 
+7)what are the reasons for cpu hanging problem
+8)explain about mpu
+
+
+
+#######################################################
+ write a code to multiply value with minimum number of instruction cycles
+find the largest and second largest value from an array
+Mutex and Semaphore difference
+ How to swap two numbers without using temporary variables 3 methods
+ Pointers
+Interrupts
+Can we pass values to an interrupt and can interrupt return a value
+ What is soc
+During live in Instagram or Facebook what will be the processes or that is running at the same time(like camera, audio, gps)
+Constant pointer
+
+
+#######################################################
+1. Write a program to Downscale and crop the Image (based on my project)
+2. Difference between Semaphore and mutex(Frequently asked question in all Interviews)
+3. Difference between Process and thread?
+4. What happens if a resource is shared among the threads in multi threading? How to avoid if any problem occurs?
+5. Write a sample multithread program using any of synchronization mechanism.
+6. Write a progran to Toggle the bit in given position
+7. Write a progran to clear the bit in given position
+8. Write a program to remove the duplicates in linked list
+9. Write a program to see number of set bits in an given number?
+10. extern int a = 5; -> whether this can be written in the code?
+11. inline void func()
+    {
+	static in a;
+    }
+
+    int main()
+    {
+	static int a;
+        func();  
+    } -> does this program gives any error?
+
+12. Make a sum of two numbers program to fail by giving two numbers in a valid range?
+13. How do you make sum of two program to pass after it fails even if we give valid range?
+14. Does the thread share common heap segment also?
+15. When we declare multiple variables with register storage where does the variable store if there is no space in cpu registers?
+16. Memory layout in c?
+17. Storage classes in C?
+18. Difference between malloc and calloc?
+19. What is NULL pointer?
+20. What is Dangling Pointer?
+21. What is Memory  Leak?
+22. What is Cache memory?
+23. What is virtual memory? 
+
+
+#######################################################
+ What is memory management in C, explain it?
+explain about segmentation fault with example?
+what are the steps involved in program execution?
+expalin about volatile
+malloc and calloc differ
+you have allocated memory by using malloc/calloc then what will be happens at execution time in memory?
+how to debug the software?
+what will happen if two library files included in preprocessor?
+if run program without main() what will hapend?
+-----------------------
+progammable questions
+------------------------
+q/n:n=2 and k=5 then set a bit?
+
+#######################################################
+ Brief on worked projects
+Write Single linked list.
+multithread coding using on single linked list, use Mutex and semaphores for securing the critical section
+Questions on C - like static and global variables, how they get updated where they are stored
+memory map of C
+C compiler steps
+who initiates the main function when the exe gets triggered.
+when does memory corruption happens?
+
+#######################################################
+
+
+    Explain about Memory layout of C.
+    Storage Classes of C
+    De-reference Pointer in C
+    Explain about Linked List.
+    Write a logic for given program if number is palindrome return 1 else -1 (int mystrfunc(char *str)).
+    write a code for doubly linked list in a forwarded manner.
+    
+#######################################################
+					
+    1. what is device driver
+    2. where did you work, like character driver or block driver
+    3. what are the different types of driver
+    4. difference b/w mutex and spinlock
+    5. write a character driver code
+    6. write a c programming for swap the nibbles :- input :- 10001000 o/p 01001000
+    7. protocols like i2c,spi & uart
+    8. remaining question from projects
+    9. Most of the question from driver & driver programming
+    
+#######################################################
+1. Brief intro
+2. Projects
+3. WAP to find 2nd highest number from the given array(sorting and without sorting)
+4. WAP to swap endianness of the machine
+5. Explain about Volatile and Const keyword. together?? levels of optimization
+
+6. What is memory mapped io and io mapped io
+7. interrupt handler, interrupt latency, nvic, nmi
+8. semaphore vs mutex, main difference b/w semaphore and mutex.
+9. multi-threaded appliaction.
+10. protocol experience - uart, spi, i2c
+11. questions on i2c. how to know whether master is ready to send the data.
+12. Cache memory.
+
+
+#######################################################
+1.write a program to detect the endianess
+
+2.write a func to set nth bit in a32-bit int
+
+3.write a logic for toggle a bit?
+
+4.write a logic for clear a bit?
+
+5.int (*p)[3][4];
+
+P = 10;
+
+p++;
+
+how many bytes p gets incremented?
+
+
+6.char *Strdup ( char *s)
+
+{
+Char *p = malloc(strlen(s));
+While (*s) {
+
+*p = *s;
+
+p++;
+
+s++;
+
+}
+
+Return p;
+}
+
+Correct the above code
+
+
+7.Struct s {
+ 
+..
+..
+..
+Int a;
+..
+..
+};
+ 
+ 
+ 
+Find the offset of element "a";
+
+
+8.Void Function ( void)
+{
+Int a[10];
+Int c;
+Int d;
+Int *p;
+p = &a[0];
+ 
+c=20;
+d=30;
+ 
+For ( i=0; i<25; i++)
+{
+p[i] = 20;
+}
+ 
+Printf("%d\n", c);
+Printf("%d\n",d);
+ 
+Return;
+ 
+ 
+}
+
+what will happens if we run this above code?
+
+
+9.data
+10101010
+ 
+Val = 01
+ 
+ 
+After
+ 
+10011010
+ 
+ 
+Int Setfield( int data, int val)
+{
+// Set bit 4 and bit5 of data with bit 0 of Val and bit 1 of val.
+ 
+Return data;
+} 
+
+
+10.what is the bootup sequence?
+
+11.what is boot loader?
+
+12.why boot loader is needed?
+
+13.difference between semaphore and mutex?
+
+14.difference between spinlock and mutex?
+
+15.what is the usage of spinlock?
+
+16.can we call mutex inside ISR?
+
+
+
+
+
+#######################################################
+wap to find factorial of n
+
+#include<stdio.h>
+main()
+{
+  
+int fact(int n)
+{
+  int i=1,fact=1;
+  while(i<n)
+{
+fact=fact*i;
+}
+return fact;
+}
+
+
+void lastdigit(int n)
+{
+  int fact=fact(n);
+  int lastdigit=fact%10;
+}
+
+
+wap to find the large digit of the factorial
+
+
+test case 1: if((n>=0)&&(n<=40)
+             { 
+               pf("valid range : pass");
+             }
+          
+         2: if(n<0)
+            pf("test case failed: n must be positive value");
+            }
+         3:if(n>40)
+           pf("fail: out of range");
+
+
+
+             
+test case 1: if(n<0)
+             pf("fail: value should be positive");
+             
+          2: if(n>40)
+             pf("fail: invalid range");
+             
+          3: if((n>0)&&(n<40))
+             pf("pass: valid range");
+
+#######################################################
+
+
+what is the size of pointer?
+char *ptr = NULL;
+sizeof(ptr);
+
+
+what is the size of this structure?
+struct
+
+{ int id;
+
+char name[32];
+
+int *ptr;
+
+};
+
+what is structure padding?
+
+
+print the third element of this array by using integer pointer
+
+char arr[] = {​​10, 20, 30, 40}​​;
+int *ptr = NULL;
+ptr = arr;
+
+
+
+
+write a program to convert little endian to big endian
+#include <stdio.h>
+int main()
+{
+
+unsigned long val = 0x0000aabb;
+unsigned int res =
+    ((val & 0x000000FF) << 24) |
+    ((val & 0x0000FF00) << 8) |
+    ((val & 0x00FF0000) >> 8) |
+    ((val & 0xFF000000) >> 24);
+
+printf("%0x\n", res);
+return 0;
+}
+
+
+what is the difference between semaphore and mutex?
+what happens when two processes are trying to access the shared variable at the same time?
+write a program on thread creating?
+
+
+#######################################################
+    1. A network port has 0-31 pins. You need to verify if the port is working properly. pin 0 value is equivalent to pin 31, similarly 1 is equal to 30 and so on. Please write a code to verify the port.
+    2. What is a cache memory?
+    3. Why do we need a cache memory as we have registers and how it differs?
+    4. What are page cache modes and explain?
+    5. Can we increase cache memory from mB to GB?
+    6. What is a page fault, how it occurs and how we can handle it?
+    7. What type of data will store in cache memory?
+    8. Where will we use spinlocks?
+    9. Can we replace spinlocks with mutex?
+    10. How is an interrupt handled by a CPU?
+    11. What is the minimum time needed for an ISR function to execute?
+    12. What endpoints will we use for usb enumeration?
+    13. How do you recognize usb bulk endpoints?
+    14. Can you explain Isochronous endpoints and how it differs with Bulk endpoints?
+    15. What are device descriptors in usb?
+    16. How do you identify whether the connected usb device is 2.0 or 3.0 by seeing usb trace?
+    17.  Why does a cpu need a scheduler?
+
+#######################################################
+Interview questions asked:
+1)what is J-Tag?
+2)what is Openocd?
+3)without using size (). Find size?
+4)without using 3rd Variable. swap 2 variables. In single line?
+5)what is static?
+6)what is volatile?
+7)explain memory segments?
+
+
+#######################################################
+1) Tell me about your projects. 
+2)Are you using JTAG.
+3)Do you Know Gdb tool. Can you explain.
+4)Do you know Visual Studio. how to debug Visual Studio code.
+5)if you face unknown errors in your source code at the time of debugging. How will you resolve those errors?
+6) what is volatile?
+7)if you have done any python projects.
+8)open file. Write text and read. close file. In python
+
+
+#######################################################
+bit numbers 14 and 21 are true then return 1 else return 0 ?
+ans:-
+int fun(int data)
+{
+if(((data >> 14) & 1)==1) && (data >> 21) & 1)==1))
+ return 1;
+else
+ return 0;
+}
+----
+1000
+0100
+0010
+0001
+--->program<---
+#include<stdio.h>
+int main()
+{
+    int size=3;
+	int row, col, result=0; 
+	int arr[3][3];
+	for(row = 0; row < size; row++)
+	{
+		for(col = 0; col < size; col++)
+		{
+		    
+		if(row==col)
+		printf("1",arr[row][col]=1);
+	
+		
+		else
+		printf("0",arr[row][col]=0);
+		
+		}
+		printf("\n");
+	}
+	return 0;
+}
+----
+q/n:->  avg sped=30km
+	sig--off-->500m distance
+	avg spped = 5kmph
+find avg spped?
+------->
+5/30=1/6hours=0.16
+.5/5=0.1
+=0.16+0.1
+=0.26hrs
+
+=30.5/0.26 avg
+=117kmph  ==  wrong
+---------------
+sol:-
+t=500/5*5/18=359.9
+d=5*5/18*359.9=499.98
+s=499.98/359.99=1.38
+as=4.85=17.484kmph
+
+#######################################################
+1.Swap two numbers without using third variable
+
+
+   a=a+b;
+   b=a-b;
+   a=a-b;
+  (or)
+   a=a^b;
+   b=a^b;
+   a=a^b;
+
+2.Find Second largest element in an array
+   Input: arr[] = {12, 35, 1, 10, 34, 1}
+   Output: 34
+
+
+highest1=highest2=a[0];
+for(i=0;i<n;i++)
+{
+  if(highest1>a[i])
+{
+    highest2=highest1;
+    highest1=a[i];
+}
+else if(highest2>a[i])
+{
+   highest2=a[i];
+}
+
+3. Reverse a string
+   Input: str = "abdce";
+   Output: ecdba
+
+len = str_len(str)
+
+for(i=0; i<len/2; i++)
+{
+	c=a[i];
+	a[i] = a[len-i-1];
+	a[len-i-1] = c;
+}
+
+
+4.print half pyramid where n=5
+
+
+ * 
+ *  * 
+ *  *  * 
+ *  *  *  * 
+ *  *  *  *  * 
+
+  
+
+  for(i=0; i<n; i++)
+ {
+     for(j=0;j<=i;j++)
+     {
+         printf(" * ");
+     }
+     printf("\n");
+ }
+}
+
+
+
+5. rotate matrix into 180 degree
+
+
+
+input :
+          
+1  2  3  4
+5  6  7  8
+9  10 11 12
+13 14 15 16
+ output:
+    
+16 15 14 13 
+12 11 10 9 
+8 7 6 5 
+4 3 2 1
+int main()
+{
+  int arr[5][5] = { { 1, 2, 3, 4 },
+                        { 5, 6, 7, 8 },
+                        { 9, 10, 11, 12 },
+                        { 13, 14, 15, 16 } };
+   int i,j;                        
+  for(i=4; i>=0; i--)
+{
+for(j=4;j>=0;j--)
+{
+  printf(“%d”,a[i][j]);
+}
+printf(“\n”);
+}
+
+
+
+
+
+
+
+
+#######################################################
+return 1 == palindrome;
+return 0=not a palind
+
+int mystrfunc(char *str)
+{
+int temp=0;
+int len=strlen(str);
+for (i = 0; i < len; i++)
+{
+if(str[i]!=str[len-i-1])
+{
+temp = 1;
+break;
+}
+}
+if(temp == 0)
+return 1;
+else
+return 0;
+}
+
+aaa
+a->a
+a->a
+a->a
+hyderabad
+--------------
+void add()
+void del()
+void disp()
+
+--------------
+
+struct node*
+	{
+	struct node *pre;
+	int n;
+	struct node *next;
+	};
+void disp(struct node *NODE)
+{
+struct node *last;
+while(NODE!=NULL)
+{
+	printf("%d",NODE->n);
+	last=NODE;
+	NODE=NODE->next;
+}
+while(last!=NULL)
+{
+	printf("%d",last->n);
+	last=last->prev;
+}
+}
+
+void add(struct node **head_ref,int new_data)
+{
+struct node *new_node=(struct node *)malloc(sizeof(struct node));
+struct node * last = *head_ref;
+new_node->n = new_data;
+new_node->next = NULL;
+if(*head_ref == NULL)		//list empty
+{
+	new_node->pre = NULL;
+	*head_ref = new_node;
+	return;
+}
+while(last->next != NULL)
+{
+	last = last->next;
+}
+last->next = new_node;
+new_node->pre = last;
+return;
+}
+
+void del(struct node** head_ref,struct node * del_)
+{
+	if(*head_ref == NULL || del_ == NULL)
+		return;                  // if base node avail
+	if(*head_ref == del_)		  //del node is head
+		*head_ref = del_->next;
+	if(del_->next != NULL)
+		del_->next->pre=del_->pre;        // if del node is not the last one
+	if(del_->pre != NULL)
+		del_->pre->next = del_->next;     // if del node is not first node
+	if(del_->next == NULL)
+	{
+	struct node *last = del_->pre;
+	last->next = NULL;
+	}
+	free(del_);
+	return;
+}
+
+int main()
+{
+}
+------------------------
+spin lock
+------------------------
+
+const char *ptr;->
+ptr = &var allowed
+*ptr = "qal" not allowed
+
+const *char ptr;->
+ptr = &var  allowed
+*ptr = "qal" not allowed
+------------------------
+
+
+#######################################################
+Qualcomm Interview Questions:
+
+1. Write a program to Downscale and crop the Image (based on my project)
+2. Difference between Semaphore and mutex(Frequently asked question in all Interviews)
+3. Difference between Process and thread?
+4. What happens if a resource is shared among the threads in multi threading? How to avoid if any problem occurs?
+5. Write a sample multithread program using any of synchronization mechanism.
+6. Write a progran to Toggle the bit in given position
+7. Write a progran to clear the bit in given position
+8. Write a program to remove the duplicates in linked list
+9. Write a program to see number of set bits in an given number?
+10. extern int a = 5; -> whether this can be written in the code?
+11. inline void func()
+    {
+	static in a;
+    }
+
+    int main()
+    {
+	static int a;
+        func();  
+    } -> does this program gives any error?
+
+12. Make a sum of two numbers program to fail by giving two numbers in a valid range?
+13. How do you make sum of two program to pass after it fails even if we give valid range?
+14. Does the thread share common heap segment also?
+15. When we declare multiple variables with register storage where does the variable store if there is no space in cpu registers?
+16. Memory layout in c?
+17. Storage classes in C?
+18. Difference between malloc and calloc?
+19. What is NULL pointer?
+20. What is Dangling Pointer?
+21. What is Memory  Leak?
+22. What is Cache memory?
+23. What is virtual memory? 
+
+#######################################################
+
+Introduce yourself?
+Explain the projects?
+Convert given binary number to decimal
+Swap two variable values without third variable
+Explain yocto and why it is advantage compared to others
+Explain about bitbake and recipe
+What is deadlock?
+When four threads want to access the same resource but each thread should get the updated output, what will you do?
+Explain the memory management concept such as virtual memory, pages, segmentation and physical memory?
+Explain buddy and slab systems (Asked in different way)
+What is copy to user and copy from user?
+what is kernel upstream and kernel downstream?
+EXplain about the device tree?
+How the interrupt is handled?
+What code will be written in spinlock?
+Explain the necessity of spinlock?
+Difference between spinlock and mutex?
+Difference between threads and process?
+What are the advantages and disadvantages of using threads?
+Difference between array and linked list?
+Difference between linked list and stack?
+How to handle the doubly linked list node to traverse in both directions with the single pointer?
+What is the use of function pointer in the real life scenario?
+Explain the device driver structure?
+Explain voltaile,const,extern and static keyword?
+Explain memory leakage? How to know the memory leakages?
+explain segmentation fault?
+When system hang and how to overcome it?
+Different types of device drivers and explain it?
+What is the advantage of cnn over other models?
+Different types of neural networks?
+Explain the nueral network?
+What are the different libraries used in embedded project?
+What are the different libraries used in AI?
+
+#######################################################
+1. Self-Introduction
+2. Brief on projects.
+3. Challenges faced during the projects.
+4. What is static & volatile? What is the real-time use case to use them?
+5. What is Mutex? Explain the use case.
+6. Why can't we use a global integer/bool variable for locking the resource?
+   What is the difference in using this varaible as sync tool and Mutex?
+7. The main process creates two child process by forking,
+   there is variable 'i' which is initialized to 0 in the main process before forking.
+   If child1 does i++ and child2 does i--, then
+   -> What will be output if we print value 'i' after child process are done with execution.
+   	1. With Mutex locking for variable i as resource.
+   	2. Without any resource locking.
+8. What is priority inversion?
+9. Any knowledge on ARM controllers? (Note: My answer was I just know the basics but haven't had
+   hands-on experience in them)
+10. What is data barrier?
+11. What is a re-entrant code and non-reentrant code? Key differences.
+12. Any experience in Device Driver development.
+
+#######################################################
+ Brief on worked projects
+Write Single linked list.
+multithread coding using on single linked list, use Mutex and semaphores for securing the critical section
+Questions on C - like static and global variables, how they get updated where they are stored
+memory map of C
+C compiler steps
+who initiates the main function when the exe gets triggered.
+when does memory corruption happens?
+
+#######################################################
+1) difference between char const* p and const char* p
+2) volatile and const
+3) function pointers
+4) Array declarations with int and char
+5) dynamic memory allocation for an array using malloc
+6) char *ptr1 = "hello word"   replace e with E in string with pointers
+7) const char *ptr2 = "hello word" replace e with E in string with pointers
+7) create a 2D array using pointers and assign values 1,2,3,….. to each position
+8) git commands like stash pull fetch checkout merge branch
+9) python lists, tuples, dictionaries, vectors
+10) program to print a string and reverse a string
+11) syntax for  list and dictionaries together
+12) Linux commands like ps grep top ifconfig
+13) write a linked list node with char data
+14) OS conceps: IPC , mutex and semaphore
+15) primary memory, L1, L2, L3 caches and virtual memory
+16) Paging concept
+17) WAP to create multiple threads print even and odd numbers alternatively in each thread
+18)  Linux kernel debugging techniques explained kgdb
+
+
+#######################################################
+Qualcomm interview Questions: 
+
+team: IOT security team
+
+date: 23/05/2024
+
+interviewers: yuvraj ranganathan and madhukar sharma
+
+1. prev projects
+2. write a c program to count number of set bits
+3. write a macro to set any bit in a number
+4. structures and union questions
+5. macros vs inline functions
+6. mutex and semaphores
+7. padding vs packing
+8. program for macros and inline function to explain typechecking scenario
+9. Bit fields 
+10. write macros to manipulate registers having bitfiels to update values
+	regField(Register, field, value)
+
+11. Size of below structure
+struct Name {
+	char a:1;
+	char b:3;
+	char c:1;
+	char d:4;
+}name;
+
+#######################################################
+1) Tell me about yourself
+2) what is debugger and why we use?
+3) Do you experience on debuggers and where you used?
+4) asked about JTAG and openOCD
+5) Do you have experience in python languages
+6) One question from python language 
+7) what is stack and heap?
+8) what is use case
+9) what is Volatile?
+10) what is use case
+11) where we use in real time
+12) what is stack over flow
+13) what is cache
+14) what is the use case
+15) about L1,L2 and L3 cache
+
+#######################################################
+
+1) Explain about your expertise
+2) Questions based on the project i was in Qualcomm ( NFC based questions)
+3) What if you define a function defination in a .h file & try to include it across multiple files    which are supposed to be compiled together. 
+4) Why do we have a Makefile in a build environment.
+
+#######################################################
+1) Different type of Debug techniques 
+2) Real time experience in kernel Debug technique
+3) what is open source debugger. How to debug the kernel from using open ocd
+4) Basic C concept.
+
+#######################################################
+1) How to debug the general code c code. Debug techniques
+2) Real time experience in kernel Debug technique in depth
+3) what is open source debugger. How to debug the kernel from using open ocd
+4) Basic C program
+in given number find check first and last number is 1 or not
+5)
+int a = 20;
+int *x =&a;
+char b = ‘A’;
+char *y = &b;
+y[0] = x[0];
+printf(*x == *y?True:False);
+what will print and why explain
+6) RTOS example, explain used in qualcomm
+7) which Real time processor used in Qualcomm
+
